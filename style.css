@@ -1,0 +1,69 @@
+#map {
+    height: 100vh;
+    width: 75vw;
+}
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+}
+
+.pipeline-list {
+    width:25vw;
+    height:100vh;
+    overflow: auto;
+    background: whitesmoke;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.leaflet-container {
+    height: 500px;
+    width: 100vw;
+}
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+    padding: 30px;
+    background: #466799;
+    color: #fff;
+    font-size:16px;
+
+}
+.leaflet-popup-content-wrapper p {
+    padding: 16px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.pipeline-list .heading {
+    background: #466799;
+    color: #ffff;
+}
+.pipeline-list .heading h2 {
+    padding: 1rem;
+}
+.pipeline-list li{
+    padding: 0 1rem;
+    list-style-type: none;   
+}
+.pipeline-list .list-item{
+ margin: 1rem 0;
+ border-bottom: 1px solid rgba(0,0,0,0.1);
+ padding-bottom: 1rem;
+}
+.pipeline-list .oper-name{
+text-description: none;
+font-size: 18px;
+color: #466799;
+font-weight: 700;
+}
