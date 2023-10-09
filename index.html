@@ -1,7 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="Mainstream Holdings Asset Manager" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description"
@@ -11,16 +23,16 @@
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           crossorigin="" />
     <link rel="stylesheet" href="style.css" />
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
+<?php include 'GDB.php';
+    echo "I have a $color $car.";?>
 <body>
     <div class="container">
         <div class="pipeline-list">
             <div class="heading">
                 <h2>Crude Oil Pipelines</h2>
             </div>
-            <div id="listContainer"></div>
+            <div id="pipelineList"></div>
         </div>
         <div id="map"></div>
     </div>
@@ -29,6 +41,7 @@
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
     <script src="main.js"></script>
+
 </body>
 </html>
     <title>React App</title>
