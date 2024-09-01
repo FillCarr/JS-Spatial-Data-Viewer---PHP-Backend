@@ -7,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 //fetch//
 $.ajax({
-    url: 'GDB.php',
+    url: 'GDB.js',
     success: function (response) {
         var oilJsnmap = JSON.parse(response);
         var oilLines = L.geoJSON(oilJsnmap, {
@@ -31,7 +31,7 @@ var linestyle = {
     "weight": 1
 };
 $.ajax({
-    url: 'GDB.php',
+    url: 'GDB.js',
     success: function (response) {
         // Convert the response to a JSON object
         var parsedGeoJSON = JSON.parse(response);

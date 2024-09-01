@@ -1,6 +1,9 @@
 #map {
-    height: 100vh;
-    width: 75vw;
+    top: 7.831vh; /* Starts below the header list */
+    height: 67.1vh; /* Adjusted to fit within remaining space */
+    width: 50vw; /* Width specified */
+    position: fixed; /* Keeps it in place */
+    left: 25vw; /* Moves it next to the pipeline list */
 }
 * {
     box-sizing: border-box;
@@ -17,6 +20,53 @@
     height:100vh;
     overflow: auto;
     background: whitesmoke;
+}
+.header-list .heading {
+    background: #6c7889;
+    color: #ffff;
+}
+.header-list .heading h2 {
+    padding: 1rem;
+}
+.layer-list .heading {
+    background: #466799;
+    color: #ffff;
+}
+.layer-list .heading h2 {
+    padding: 1rem;
+}
+.LRS-frame .heading {
+    background: #466799;
+    color: #ffff;
+}
+.LRS-frame .heading h2 {
+    padding: 1rem;
+}
+.header-list {
+left:25vw; /* Aligns it next to pipeline list */
+    width: 75vw; /* Remaining width */
+    height: 7.831vh; /* Specified height */
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 25vw; /* Moves it to the right of the pipeline list */
+}
+.layer-list {
+    width: 25vw;
+    height: 75vh; /* Adjusted to fit below the header list */
+    overflow: auto;
+    background: whitesmoke;
+    position: fixed;
+    right: 0;
+    top: 7.831vh; /* Starts below the header list */
+}
+.LRS-frame {
+    width:100vw;
+    overflow: auto;
+    background: whitesmoke;
+    position: fixed; 
+    height: 25vh;/* Ensures it stays on the right side */
+    bottom: 0; 
 }
 body{
     margin: 0;
